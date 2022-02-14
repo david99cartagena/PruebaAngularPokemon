@@ -15,3 +15,5 @@ uso de Git para subir el proyecto a un repositorio
 
 `ng serve --open`
 `ng serve --port 4100` o cualquier puerto que este libre
+
+# Este proyecto es una adaptacion de un proyecto de Fernando Herrera - Udemy Angular
