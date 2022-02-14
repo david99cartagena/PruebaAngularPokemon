@@ -1,0 +1,13 @@
+<h1 class="animated fadeIn">Pokemon</h1>
+<hr>
+
+<div class="card-columns">
+    <img class="card-img-top img-fluid" [src]="pokemon.imagepokemon" [alt]="pokemon.namepokemon">
+    <div class="card-body">
+      <h4 class="card-title">{{pokemon.namepokemon}}</h4>
+      <p class="card-text">{{pokemon.descriptionpokemon}}</p>
+      <p class="card-text">{{pokemon.typepokemon}}</p>
+
+      <a [routerLink]="['/pokemons']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<h1>Pokemons</h1>
+<hr>
+
+<div class="card-columns">
+
+    <div class="card" *ngFor="let pokemon of pokemons; let i =index">
+        <img class="card-img-top img-fluid" [src]="pokemon.imagepokemon" [alt]="pokemon.namepokemon">
+        <div class="card-body">
+          <h4 class="card-title">{{pokemon.namepokemon}}</h4>
+          <p class="card-text">{{pokemon.descriptionpokemon}}</p>
+          <button [routerLink]="['/type',i]" class="btn btn-outline-primary btn-block">Tipo Pokemon</button>
+          <button [routerLink]="['/pokemon',i]" class="btn btn-outline-primary btn-block">See More ...</button>
+        </div>
+      </div>
+</div>
